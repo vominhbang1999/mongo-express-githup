@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	h1= title
+	form(method="POST", action="/productsave")
+		.form-group
+			input.form-control(name="ten" placeholder="Name")
+		.form-group
+			input.form-control(name="gia" placeholder="giá sản phẩm")
+		.form-group
+			input.form-control(name="code" placeholder="code sản phẩm")
+		.form-group
+			button.btn.btn-primary(type="submit") Thêm mới
